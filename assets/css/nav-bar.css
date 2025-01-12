@@ -49,7 +49,7 @@ nav{
 .logo{
     height: 60px;
     width: 60px;
-    background-image: url(/assets/images/Designer.png);
+    background-image: url(../images/Designer.png);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
