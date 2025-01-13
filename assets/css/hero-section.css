@@ -1,0 +1,127 @@
+
+main{
+    font-family: "Lora", serif;
+    position: relative;
+    padding: 0 5rem;
+    margin-top: 1rem;
+}
+
+.hero{
+    border-radius: 30px;
+    display: flex;
+    height: 500px;
+    background-color: var(--nav-clr);
+    overflow: hidden;
+}
+
+.heading{
+    color: var(--heading-text-clr);
+    width: 100%;
+    align-self: center;
+    margin: 0 5rem;
+}
+
+.heading h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.heading-buttons{
+    padding: 2rem 0;
+}
+.btn1{
+    background-color: var(--heading-text-clr);
+    color: var(--accent-clr);
+}
+main .heading .heading-buttons .btn1:hover, main .heading .heading-buttons .btn2:hover{
+    margin-bottom: 0;
+}
+
+
+.hero-bg{
+    background-color: var(--accent-clr);
+    background-blend-mode: multiply;
+    background-image: url(../images/hero-bg.jpeg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* responsive */
+
+@media (max-width:1160px){
+    .hero{
+        flex-wrap: wrap;
+        height: 600px;
+        border-radius: 30px 30px 30px 30px;
+    }
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+    }
+    .heading h1, .heading p{
+        text-align: center;
+    }
+    main .hero .hero-bg{
+        display: none;
+    }
+}
+@media (max-width: 850px){
+    .heading{
+        margin-top: 10px;
+    }
+    .heading-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn1{
+        margin-bottom: 10px;
+    }
+}
+
+/* contact section */
+
+.contact-section{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height: 250px;
+    gap: 100px;
+}
+
+.contact-section .contact-heading{
+    color: var(--text-clr);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact-section p{
+    color: var(--secondary-text-clr);
+    text-align: center;
+    line-height: 2;
+}
+
+.contact, .hours, .location{
+    background-color: var(--nav-clr);
+    width: 100%;
+}
+.contact:hover, .hours:hover, .location:hover{
+    background-color: var(--dark-blur-backgrond-clr);
+}
+
+
+@media (max-width:1100px){
+    .contact-section{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
