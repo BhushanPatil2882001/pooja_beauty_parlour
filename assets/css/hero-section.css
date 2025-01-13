@@ -2,7 +2,7 @@
 main{
     font-family: "Lora", serif;
     position: relative;
-    padding: 0 5rem;
+    padding: 0 2rem;
     margin-top: 1rem;
 }
 
@@ -113,6 +113,7 @@ main .heading .heading-buttons .btn1:hover, main .heading .heading-buttons .btn2
 .contact, .hours, .location{
     background-color: var(--nav-clr);
     width: 100%;
+    border-radius: 30px;
 }
 .contact:hover, .hours:hover, .location:hover{
     background-color: var(--dark-blur-backgrond-clr);
