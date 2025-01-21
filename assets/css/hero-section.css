@@ -42,6 +42,9 @@ main{
 main .heading .heading-buttons .btn1:hover, main .heading .heading-buttons .btn2:hover{
     margin-bottom: 0;
 }
+.btn1:hover{
+    background-color: rgb(58, 58, 58);
+}
 
 
 .hero-bg{
