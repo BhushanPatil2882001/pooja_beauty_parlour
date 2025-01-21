@@ -12,6 +12,12 @@ main{
     height: 500px;
     background-color: var(--nav-clr);
     overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: all 0.5s ease-in-out;
+}
+
+.hero:hover{
+    box-shadow: var(--hover-box-shadow);
 }
 
 .heading{
@@ -74,7 +80,7 @@ main .heading .heading-buttons .btn1:hover, main .heading .heading-buttons .btn2
 }
 @media (max-width: 850px){
     .heading{
-        margin-top: 10px;
+        margin: 0;
     }
     .heading-buttons{
         display: flex;
@@ -88,6 +94,15 @@ main .heading .heading-buttons .btn1:hover, main .heading .heading-buttons .btn2
 }
 
 /* contact section */
+
+.contact-title{
+    /* border: 1px solid black; */
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 20px;
+    color: var(--heading-text-clr);
+}
 
 .contact-section{
     display: flex;
@@ -114,9 +129,17 @@ main .heading .heading-buttons .btn1:hover, main .heading .heading-buttons .btn2
     background-color: var(--nav-clr);
     width: 100%;
     border-radius: 30px;
+    box-shadow: var(--box-shadow);
+    transition: all 0.5s ease-in-out;
 }
+
 .contact:hover, .hours:hover, .location:hover{
-    background-color: var(--dark-blur-backgrond-clr);
+    /* background-color: var(--dark-blur-backgrond-clr); */
+    box-shadow: var(--hover-box-shadow);
+}
+
+.location a:hover{
+    text-decoration: underline;
 }
 
 
